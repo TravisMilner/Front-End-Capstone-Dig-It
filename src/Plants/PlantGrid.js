@@ -1,11 +1,6 @@
 import React from "react"
 
 
-
-
-
-
-
 export const PlantGrid = ({plantArr}) => {
     console.log(plantArr)
 

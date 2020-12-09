@@ -3,6 +3,7 @@ import { PlantContext } from "./PlantProvider"
 import { Plant } from "./Plant"
 import "./Plant.css"
 import { PlantGrid } from "./PlantGrid"
+import { CultivationList } from "../Cultivation/CultivationList"
 
 
 export const PlantList = () => {
@@ -27,6 +28,7 @@ let plantArr = []
             }
             </select>
             <PlantGrid plantArr = {plant} />
+            <CultivationList plantArr = {plant} />
         </div>
     )
 }
