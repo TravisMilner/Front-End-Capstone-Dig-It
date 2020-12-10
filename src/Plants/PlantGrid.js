@@ -8,7 +8,7 @@ import { PlotContext } from "../Plots/PlotProvider"
 export const PlantGrid = ({plantArr}) => {
     console.log(plantArr)
     const {  addPlantPlot, getPlantByName } = useContext(PlantContext)
-    const { plots, addPlots } = useContext(PlotContext) 
+    const { plots, addPlots, addPlantPlots, getPlantPlots } = useContext(PlotContext) 
 
     const grid1 = useRef(null)
     const grid2 = useRef(null)
@@ -27,6 +27,52 @@ export const PlantGrid = ({plantArr}) => {
             name: name.current.value,
             userId: +localStorage.getItem("app_user_id")
         })
+        .then(res=>res.json())
+        .then(res => {
+            console.log(res)
+           addPlantPlots({
+                plotId: res.id,
+                plantId: getPlantByName(grid1.current.innerHTML).id
+            })
+            addPlantPlots({
+                plotId: res.id,
+                plantId: getPlantByName(grid2.current.innerHTML).id
+            })
+            addPlantPlots({
+                plotId: res.id,
+                plantId: getPlantByName(grid3.current.innerHTML).id
+            })
+            addPlantPlots({
+                plotId: res.id,
+                plantId: getPlantByName(grid4.current.innerHTML).id
+            })
+            addPlantPlots({
+                plotId: res.id,
+                plantId: getPlantByName(grid5.current.innerHTML).id
+            })
+            addPlantPlots({
+                plotId: res.id,
+                plantId: getPlantByName(grid6.current.innerHTML).id
+            })
+            addPlantPlots({
+                plotId: res.id,
+                plantId: getPlantByName(grid6.current.innerHTML).id
+            })
+            addPlantPlots({
+                plotId: res.id,
+                plantId: getPlantByName(grid7.current.innerHTML).id
+            })
+            addPlantPlots({
+                plotId: res.id,
+                plantId: getPlantByName(grid8.current.innerHTML).id
+            })
+            addPlantPlots({
+                plotId: res.id,
+                plantId: getPlantByName(grid9.current.innerHTML).id
+            })
+           
+        })
+        .then(addPlots)
        
         
     }
@@ -48,9 +94,9 @@ console.log(obj)
     return (
         <>
             <div className = "grid">
-                <div className = "grid__text" id="grid__text"><input type = "text" ref = {name}/>Name your garden..</div>
+                <div className = "grid__text" id="grid__text"><input type = "text" ref = {name} placeholder="Name your garden.."/></div>
                 <div className = "grid__item" id= "item--1" ref = {grid1}>{obj.grid1}</div>
-                <div className = "grid__item" id= "item--2" ref= {grid2}>{obj.grid2} </div>
+                <div className = "grid__item" id= "item--2" ref = {grid2}>{obj.grid2}</div>
                 <div className = "grid__item" id= "item--3" ref = {grid3}>{obj.grid3}</div>
                 <div className = "grid__item" id= "item--4" ref = {grid4}>{obj.grid4}</div>
                 <div className = "grid__item" id= "item--5" ref = {grid5}>{obj.grid5}</div>
@@ -60,6 +106,7 @@ console.log(obj)
                 <div className = "grid__item" id= "item--9" ref = {grid9}>{obj.grid9}</div>
                 <button onClick = {() => {
                     constructNewPlot()
+                    console.log(grid1)
                 
                 }}>Save Grid</button>
                 

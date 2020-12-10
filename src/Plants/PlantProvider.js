@@ -8,7 +8,8 @@ export const PlantProvider = (props) => {
     const [plants, setPlants] = useState([])
 
     const getPlantByName = (name) => {
-        plants.find(p => p.name === name)
+        console.log(name)
+       return plants.find(p => p.name === name)
     }
 
     const getPlants = () => {
