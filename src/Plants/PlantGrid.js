@@ -7,7 +7,7 @@ import { PlotContext } from "../Plots/PlotProvider"
 
 export const PlantGrid = ({plantArr}) => {
     console.log(plantArr)
-    const {  addPlantPlot, getPlantByName } = useContext(PlantContext)
+    const {  addPlantPlot, getPlantByName, getPlots} = useContext(PlantContext)
     const { plots, addPlots, addPlantPlots, getPlantPlots } = useContext(PlotContext) 
 
     const grid1 = useRef(null)
@@ -34,45 +34,45 @@ export const PlantGrid = ({plantArr}) => {
                 plotId: res.id,
                 plantId: getPlantByName(grid1.current.innerHTML).id
             })
-            addPlantPlots({
+            .then(addPlantPlots({
                 plotId: res.id,
                 plantId: getPlantByName(grid2.current.innerHTML).id
-            })
-            addPlantPlots({
+            }))
+            .then(addPlantPlots({
                 plotId: res.id,
                 plantId: getPlantByName(grid3.current.innerHTML).id
-            })
-            addPlantPlots({
+            }))
+            .then(addPlantPlots({
                 plotId: res.id,
                 plantId: getPlantByName(grid4.current.innerHTML).id
-            })
-            addPlantPlots({
+            }))
+            .then(addPlantPlots({
                 plotId: res.id,
                 plantId: getPlantByName(grid5.current.innerHTML).id
-            })
-            addPlantPlots({
+            }))
+            .then(addPlantPlots({
                 plotId: res.id,
                 plantId: getPlantByName(grid6.current.innerHTML).id
-            })
-            addPlantPlots({
+            }))
+            .then(addPlantPlots({
                 plotId: res.id,
                 plantId: getPlantByName(grid6.current.innerHTML).id
-            })
-            addPlantPlots({
+            }))
+            .then(addPlantPlots({
                 plotId: res.id,
                 plantId: getPlantByName(grid7.current.innerHTML).id
-            })
-            addPlantPlots({
+            }))
+            .then(addPlantPlots({
                 plotId: res.id,
                 plantId: getPlantByName(grid8.current.innerHTML).id
-            })
-            addPlantPlots({
+            }))
+            .then(addPlantPlots({
                 plotId: res.id,
                 plantId: getPlantByName(grid9.current.innerHTML).id
-            })
+            }))
            
         })
-        .then(addPlots)
+        .then(getPlots)
        
         
     }
