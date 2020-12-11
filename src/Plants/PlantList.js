@@ -16,10 +16,7 @@ let plantArr = []
     return (
         <div className = "plants">
             <select className = "plantDrop" onChange= {(e) => {
-                console.log("hello")
-                plantArr = plant.slice()
-                plantArr.push(e.target[e.target.options.selectedIndex].label)
-                setplant(plantArr)
+               
             
             }}>
                 <option value = "0" >Please select a crop...</option>
@@ -27,8 +24,7 @@ let plantArr = []
                 plants.map(pla => <Plant key = {pla.id} plant = {pla} />)
             }
             </select>
-            <PlantGrid plantArr = {plant} />
-            <CultivationList plantArr = {plant} />
+            
         </div>
     )
 }
