@@ -3,15 +3,20 @@ import {PlantContext} from "./PlantProvider"
 import {Plant} from "./Plant"
 
 export const PlantDetails = (props) => {
-    const {plants, getPlants, addPlant } = useContext(PlantContext)
+    const {plants, getPlants, addPlant, getPlantPlots, plots } = useContext(PlantContext)
 
     useEffect (() => {
         getPlants()
+        .then(getPlantPlots)
     }, [])
     const plantId = useRef(null)
     return (
         <div className = "plants">
+            <h2>Now select your plants..</h2>
             <select ref = {plantId} className= "plantDrop" onChange = {(e) => {
+                    
+
+
                     addPlant({
                         plotId: 1,
                         plantId: +plantId.current.value

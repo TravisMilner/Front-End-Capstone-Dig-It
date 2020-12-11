@@ -14,7 +14,7 @@ export const ApplicationViews = (props) => {
                     props => <NewPlot {...props} />
                 } />
 
-                <Route exact path = "/plantselection" render = {
+                <Route exact path = "/plantselection/:plotId(\d+)" render = {
                     props => <PlantDetails {...props} />
                 } />
                 </PlantProvider>

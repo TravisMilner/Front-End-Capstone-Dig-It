@@ -19,7 +19,7 @@ export const PlotProvider = (props) => {
             },
             body: JSON.stringify(plots)
         })
-        .then(getPlots)
+        
     }
 
     return (
