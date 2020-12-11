@@ -1,7 +1,7 @@
 import React, { useContext, useRef } from "react"
 import {  PlotContext } from "./PlotProvider"
 
-export const NewPlot = () => {
+export const NewPlot = (props) => {
     const {addPlots} = useContext(PlotContext)
 
     const name = useRef(null)
@@ -16,6 +16,7 @@ export const NewPlot = () => {
                     name: name.current.value,
                     userId: +localStorage.getItem("app_user_id")
                 })
+                .then(() => props.history.push("/plantselection"))
             }} >Save Garden</button>
 
 
