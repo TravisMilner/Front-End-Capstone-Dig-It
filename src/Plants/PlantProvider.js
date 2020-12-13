@@ -12,8 +12,8 @@ export const PlantProvider = (props) => {
         .then(setPlants)
     }
 
-    const getPlantPlots = () => {
-        return fetch ("http://localhost:8088/plantPlots")
+    const getPlantPlots = (plotId) => {
+        return fetch (`http://localhost:8088/plantPlots?plotId=${plotId}&_expand=plant`)
         .then(res => res.json())
         .then(setPlots)
     }
@@ -26,7 +26,7 @@ export const PlantProvider = (props) => {
             },
             body: JSON.stringify(plants)
         })
-        .then(getPlants)
+        .then(getPlantPlots)
         
     }
 

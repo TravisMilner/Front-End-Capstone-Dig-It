@@ -6,24 +6,26 @@ import { PlantGrid } from "./PlantGrid"
 import { CultivationList } from "../Cultivation/CultivationList"
 
 
-export const PlantList = () => {
-    const { plants, getPlants } = useContext(PlantContext)
+export const PlantList = (props) => {
+    const { plants, getPlants, getPlantPlots, plots } = useContext(PlantContext)
     const [plant, setplant ] = useState([])
+    const plotId = parseInt(props.match.params.plotId)
     useEffect(() => {
-        getPlants()
+        getPlantPlots(plotId)
+        
     }, [])
-let plantArr = []
+
+    console.log(plots)
     return (
+
         <div className = "plants">
-            <select className = "plantDrop" onChange= {(e) => {
-               
+            <div className ="plants__left">
+                {plots.map(plant => plant.plant.name)
+                
+                }
+
+            </div>
             
-            }}>
-                <option value = "0" >Please select a crop...</option>
-            {
-                plants.map(pla => <Plant key = {pla.id} plant = {pla} />)
-            }
-            </select>
             
         </div>
     )

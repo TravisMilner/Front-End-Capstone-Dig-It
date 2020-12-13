@@ -2,8 +2,9 @@ import React from "react"
 import {Route} from "react-router-dom"
 import { NewPlot } from "./Plots/PlotConstruct"
 import { PlotProvider } from "./Plots/PlotProvider"
-import {PlantDetails} from "./Plants/PlantDetails"
+import {PlantSelect} from "./Plants/PlantSelect"
 import {PlantProvider} from "./Plants/PlantProvider"
+import { PlantList } from "./Plants/PlantList"
 
 export const ApplicationViews = (props) => {
     return (
@@ -15,8 +16,13 @@ export const ApplicationViews = (props) => {
                 } />
 
                 <Route exact path = "/plantselection/:plotId(\d+)" render = {
-                    props => <PlantDetails {...props} />
+                    props => 
+                    <>
+                    <PlantSelect {...props} />
+                    {/* <PlantList {...props} /> */}
+                    </>
                 } />
+                {/* <Route path = "plantselection/:plotId(\d+)" */}
                 </PlantProvider>
             </PlotProvider>
 

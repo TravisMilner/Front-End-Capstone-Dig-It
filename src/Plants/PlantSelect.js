@@ -1,8 +1,12 @@
 import React, { useContext, useEffect, useRef } from "react"
 import {PlantContext} from "./PlantProvider"
 import {Plant} from "./Plant"
+import {PlantList} from "./PlantList"
 
-export const PlantDetails = (props) => {
+// This component is responsible for rendering a drop down of my plants and POSTing to database on select change
+
+
+export const PlantSelect = (props) => {
     const {plants, getPlants, addPlant, getPlantPlots, plots } = useContext(PlantContext)
 
     useEffect (() => {
@@ -12,13 +16,15 @@ export const PlantDetails = (props) => {
     const plantId = useRef(null)
     return (
         <div className = "plants">
-            <h2>Now select your plants..</h2>
-            <select ref = {plantId} className= "plantDrop" onChange = {(e) => {
+            <h1>Now lets select some plants..</h1>
+            <select ref = {plantId}  className= "plantDrop" onChange = {(e) => {
+                    console.log(e)
+
                     
 
 
                     addPlant({
-                        plotId: 1,
+                        plotId: +props.match.params.plotId,
                         plantId: +plantId.current.value
                     })
             }}>
@@ -29,6 +35,9 @@ export const PlantDetails = (props) => {
 
 
             </select>
+            <PlantList {...props} />
+
+            
         </div>
     )
 }
