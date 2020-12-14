@@ -31,9 +31,13 @@ export const PlantProvider = (props) => {
         
     }
 
+    const getPlantById = (plantId) => {
+       return plants.find(plant=> plant.id === plantId)
+    }
+
     return (
         <PlantContext.Provider value ={{
-            plants, getPlants, addPlant, getPlantPlots, plantPlots
+            plants, getPlants, addPlant, getPlantPlots, plantPlots, getPlantById
         }}>
             {props.children}
         </PlantContext.Provider>

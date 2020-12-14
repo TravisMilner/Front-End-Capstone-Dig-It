@@ -18,7 +18,7 @@ export const NewPlot = (props) => {
                 })
                 
                 .then((resObj) => props.history.push(`/plantselection/${resObj.id}`))
-                
+                .then(getPlots)
             }} >Save Garden</button>
 
 
