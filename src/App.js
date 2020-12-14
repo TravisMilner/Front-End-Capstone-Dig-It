@@ -16,7 +16,7 @@ function App() {
             if (localStorage.getItem("app_user_id")) {
                 return (
                     <>
-                        <ApplicationViews />
+                        <ApplicationViews  />
                     </>
                 )
             } else {

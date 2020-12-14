@@ -15,7 +15,7 @@ export const PlantSelect = (props) => {
     }, [])
     const plantId = useRef(null)
     return (
-        <div className = "plants">
+        <>
             <h1>Now lets select some plants..</h1>
             <select ref = {plantId}  className= "plantDrop" onChange = {(e) => {
                     console.log(e)
@@ -38,6 +38,6 @@ export const PlantSelect = (props) => {
            
 
             
-        </div>
+       </>
     )
 }
