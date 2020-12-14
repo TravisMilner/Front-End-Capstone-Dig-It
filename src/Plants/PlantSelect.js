@@ -11,7 +11,7 @@ export const PlantSelect = (props) => {
 
     useEffect (() => {
         getPlants()
-        .then(getPlantPlots)
+        
     }, [])
     const plantId = useRef(null)
     return (
@@ -30,12 +30,12 @@ export const PlantSelect = (props) => {
             }}>
                 <option value = "0">Plant Selection...</option>
                 {
-                    plants.map(pla => <Plant key = {pla.id} plant = {pla} />)
+                    plants.map(plant => <option key={plant.id} value={plant.id} plant={plant}>{plant.name}</option>)
                 }
 
 
             </select>
-            <PlantList {...props} />
+           
 
             
         </div>

@@ -16,9 +16,9 @@ export const NewPlot = (props) => {
                     name: name.current.value,
                     userId: +localStorage.getItem("app_user_id")
                 })
-                .then(res => res.json())
+                
                 .then((resObj) => props.history.push(`/plantselection/${resObj.id}`))
-                .then(getPlots)
+                
             }} >Save Garden</button>
 
 

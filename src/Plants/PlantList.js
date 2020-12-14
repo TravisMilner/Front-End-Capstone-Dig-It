@@ -2,31 +2,21 @@ import React, { useContext, useEffect, useState } from "react"
 import { PlantContext } from "./PlantProvider"
 import { Plant } from "./Plant"
 import "./Plant.css"
-import { PlantGrid } from "./PlantGrid"
-import { CultivationList } from "../Cultivation/CultivationList"
-
-
+//PlantList gets plants associated with a specific plotId and returns plants by plant.name
 export const PlantList = (props) => {
-    const { plants, getPlants, getPlantPlots, plots } = useContext(PlantContext)
-    const [plant, setplant ] = useState([])
-    const plotId = parseInt(props.match.params.plotId)
+    const { getPlantPlots, plantPlots } = useContext(PlantContext)
     useEffect(() => {
+        const plotId = parseInt(props.match.params.plotId)
         getPlantPlots(plotId)
-        
     }, [])
-
-    console.log(plots)
+    console.log(plantPlots, "heeeeeeee")
     return (
-
         <div className = "plants">
             <div className ="plants__left">
-                {plots.map(plant => plant.plant.name)
-                
+                {
+                plantPlots.map(plot => <Plant key={plot.id} plant={plot.plant.name} />)
                 }
-
             </div>
-            
-            
         </div>
     )
 }

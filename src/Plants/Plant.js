@@ -1,9 +1,8 @@
-import React from "react"
-
-export const Plant = ({plant}) => (
-    <>
-        <option key={plant.id} value = {plant.id}>
-            {plant.name}
-        </option>
-    </>
-)
+import React from "react";
+export const Plant = ({ plant }) => (
+  <>
+    <div>
+      <p>{plant}</p>
+    </div>
+  </>
+);

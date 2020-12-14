@@ -4,7 +4,7 @@ export const PlantContext = React.createContext()
 
 export const PlantProvider = (props) => {
     const [plants, setPlants] = useState([])
-    const [plots, setPlots] = useState([])
+    const [plantPlots, setPlantPlots] = useState([])
 
     const getPlants = () => {
         return fetch ("http://localhost:8088/plants")
@@ -15,7 +15,7 @@ export const PlantProvider = (props) => {
     const getPlantPlots = (plotId) => {
         return fetch (`http://localhost:8088/plantPlots?plotId=${plotId}&_expand=plant`)
         .then(res => res.json())
-        .then(setPlots)
+        .then(setPlantPlots)
     }
 
     const addPlant = (plants) => {
@@ -26,13 +26,14 @@ export const PlantProvider = (props) => {
             },
             body: JSON.stringify(plants)
         })
-        .then(getPlantPlots)
+        .then(p => p.json())
+        .then(p => getPlantPlots(p.plotId))
         
     }
 
     return (
         <PlantContext.Provider value ={{
-            plants, getPlants, addPlant, getPlantPlots, plots
+            plants, getPlants, addPlant, getPlantPlots, plantPlots
         }}>
             {props.children}
         </PlantContext.Provider>

@@ -19,7 +19,7 @@ export const ApplicationViews = (props) => {
                     props => 
                     <>
                     <PlantSelect {...props} />
-                    {/* <PlantList {...props} /> */}
+                    <PlantList {...props} />
                     </>
                 } />
                 {/* <Route path = "plantselection/:plotId(\d+)" */}
