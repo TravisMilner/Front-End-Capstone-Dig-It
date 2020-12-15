@@ -1,5 +1,6 @@
 import React, { useContext, useRef } from "react"
 import {  PlotContext } from "./PlotProvider"
+import {SavedPlots} from "./SavedPlots"
 
 export const NewPlot = (props) => {
     const {addPlots, getPlots} = useContext(PlotContext)
@@ -21,7 +22,7 @@ export const NewPlot = (props) => {
                 .then(getPlots)
             }} >Save Garden</button>
 
-
+            
         </>
     )
 }

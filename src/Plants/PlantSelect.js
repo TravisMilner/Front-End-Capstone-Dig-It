@@ -7,7 +7,7 @@ import {PlantList} from "./PlantList"
 
 
 export const PlantSelect = (props) => {
-    const {plants, getPlants, addPlant, getPlantPlots, plots } = useContext(PlantContext)
+    const {plants, getPlants, addPlant, getPlantPlots, plots, plantPlots } = useContext(PlantContext)
 
     useEffect (() => {
         getPlants()
@@ -19,14 +19,20 @@ export const PlantSelect = (props) => {
             <h1>Now lets select some plants..</h1>
             <select ref = {plantId}  className= "plantDrop" onChange = {(e) => {
                     console.log(e)
-
+                    if(plantPlots.length < 9 ) {
+                        addPlant({
+                        plotId: +props.match.params.plotId,
+                        plantId: +plantId.current.value
+                    })} else {
+                        window.alert("you've reached the limit")
+                    }
                     
 
 
-                    addPlant({
-                        plotId: +props.match.params.plotId,
-                        plantId: +plantId.current.value
-                    })
+                    // addPlant({
+                    //     plotId: +props.match.params.plotId,
+                    //     plantId: +plantId.current.value
+                    // })
             }}>
                 <option value = "0">Plant Selection...</option>
                 {

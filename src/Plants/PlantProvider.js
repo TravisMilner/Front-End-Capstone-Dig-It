@@ -3,6 +3,7 @@ import React, { useState } from "react"
 export const PlantContext = React.createContext()
 
 export const PlantProvider = (props) => {
+    const [allPlantPlots, setAllPlantPlots] = useState([])
     const [plants, setPlants] = useState([])
     const [plantPlots, setPlantPlots] = useState([])
     const [clickPlant, setClickPlant] = useState(0)
@@ -11,6 +12,12 @@ export const PlantProvider = (props) => {
         return fetch ("http://localhost:8088/plants")
         .then(res => res.json())
         .then(setPlants)
+    }
+
+    const getAllPlantPlots = () => {
+        return fetch ("http://localhost:8088/plantPlots")
+        .then(res => res.json())
+        .then(setAllPlantPlots)
     }
 
     const getPlantPlots = (plotId) => {
@@ -29,6 +36,7 @@ export const PlantProvider = (props) => {
         })
         .then(p => p.json())
         .then(p => getPlantPlots(p.plotId))
+        .then(getAllPlantPlots)
         
     }
 
@@ -38,7 +46,7 @@ export const PlantProvider = (props) => {
 
     return (
         <PlantContext.Provider value ={{
-            plants, getPlants, addPlant, getPlantPlots, plantPlots, getPlantById, clickPlant, setClickPlant
+            plants, getPlants, addPlant, getPlantPlots, plantPlots, getPlantById, clickPlant, setClickPlant, setAllPlantPlots, getAllPlantPlots, allPlantPlots
         }}>
             {props.children}
         </PlantContext.Provider>

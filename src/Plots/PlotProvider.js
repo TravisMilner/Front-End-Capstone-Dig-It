@@ -23,9 +23,16 @@ export const PlotProvider = (props) => {
         // .then(getPlots)
     }
 
+    const deletePlot = (plotId) => {
+        return fetch (`http://localhost:8088/plots/${plotId}`, {
+            method: "DELETE"
+        })
+        .then(getPlots)
+    }
+
     return (
         <PlotContext.Provider value = {{
-            plots, getPlots, addPlots
+            plots, getPlots, addPlots, deletePlot
         }}>
             {props.children}
         </PlotContext.Provider>

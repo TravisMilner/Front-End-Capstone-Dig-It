@@ -9,9 +9,7 @@ export const PlantGrid = (props) => {
     
    
     const { getPlantPlots, plantPlots, getPlantById, clickPlant, setClickPlant} = useContext(PlantContext)
-    // if(plantPlots.length() > 9) {
-    //     window.alert("you've reached the limit")
-    // }
+    
     useEffect(() => {
         const plotId = parseInt(props.match.params.plotId)
         getPlantPlots(plotId)
@@ -37,7 +35,9 @@ export const PlantGrid = (props) => {
                 )})
                 
             }
-            <button>Done with Plants</button>
+            <button onClick = {() => {
+              props.history.push("/")
+            }}>Done with Plants</button>
             
             </div>
         

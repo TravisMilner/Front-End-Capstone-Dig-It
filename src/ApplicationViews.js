@@ -3,13 +3,15 @@ import {Route} from "react-router-dom"
 import { NewPlot } from "./Plots/PlotConstruct"
 import { PlotProvider } from "./Plots/PlotProvider"
 import {PlantSelect} from "./Plants/PlantSelect"
-import {PlantProvider} from "./Plants/PlantProvider"
+import {PlantProvider, PlantContext} from "./Plants/PlantProvider"
 import { PlantList } from "./Plants/PlantList"
 import {PlantGrid} from "./Plants/PlantGrid"
 import "./Plants/Plant.css"
+import { SavedPlots } from "./Plots/SavedPlots"
 
 export const ApplicationViews = (props) => {
     
+
 
     return (
         <>
@@ -17,6 +19,7 @@ export const ApplicationViews = (props) => {
                 <PlantProvider>
                 <Route exact path = "/" render = {
                     props => <NewPlot {...props} />
+                        
                 } />
 
                 <Route exact path = "/plantselection/:plotId(\d+)" render = {
@@ -31,7 +34,7 @@ export const ApplicationViews = (props) => {
                     <PlantList {...props} />
                     </div>
                     </div>
-                    
+                    <SavedPlots />
                     </>
                 } />
                 {/* <Route path = "plantselection/:plotId(\d+)" */}
