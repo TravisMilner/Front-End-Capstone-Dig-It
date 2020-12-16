@@ -16,7 +16,7 @@ export const PlantSelect = (props) => {
     const plantId = useRef(null)
     return (
         <>
-            <h1>Now lets select some plants..</h1>
+            <h1>Select nine plants for your garden..</h1>
             <select ref = {plantId}  className= "plantDrop" onChange = {(e) => {
                     console.log(e)
                     if(plantPlots.length < 9 ) {

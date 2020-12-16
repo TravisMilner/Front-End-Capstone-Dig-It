@@ -3,7 +3,7 @@ import { PlotContext } from "./PlotProvider"
 import {PlantContext} from "../Plants/PlantProvider"
 
 
-export const SavedPlots = () => {
+export const SavedPlots = (props) => {
     const {allPlantPlots, getPlantPlots, getAllPlantPlots, getPlantById} = useContext(PlantContext)
     const {plots, getPlots, deletePlot} = useContext(PlotContext)
     const [plotPicked, setPlotPicked] = useState(0)
@@ -25,7 +25,7 @@ export const SavedPlots = () => {
     return (
         <>
             <div className = "savedGarden">
-                <h2>Saved Garden</h2>
+                <h2>Saved Gardens</h2>
                 {
                     plots.map(p => {
                         
@@ -60,6 +60,9 @@ export const SavedPlots = () => {
             <div><button onClick = {() => {
                 setPlotPicked(0)
             }}>Close</button></div>
+            <div><button onClick = {() => {
+                props.history.push("/")
+            }}>Start a new Garden</button></div>
 
 
         </>

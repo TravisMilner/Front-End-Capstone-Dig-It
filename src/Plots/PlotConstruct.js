@@ -21,6 +21,9 @@ export const NewPlot = (props) => {
                 .then((resObj) => props.history.push(`/plantselection/${resObj.id}`))
                 .then(getPlots)
             }} >Save Garden</button>
+            <button onClick = {() => {
+                props.history.push("/savedgardens")
+            }}>Go to saved gardens</button>
 
             
         </>
