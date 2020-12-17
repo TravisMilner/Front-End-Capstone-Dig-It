@@ -17,7 +17,7 @@ export const PlantGrid = (props) => {
     console.log(plantPlots, "heeeeeeee")
     return (
         
-        <div className ="plants__right">
+        <div className ="plants__righter">
         
                 {
                     

@@ -32,6 +32,8 @@ export const SavedPlots = (props) => {
 
     return (
         <>
+                <img className = "savedImg" src = "/digit.png" />
+            <div className = "savedGardens">
             <div className = "savedGarden">
                 <h2>Saved Gardens</h2>
                 {
@@ -78,7 +80,7 @@ export const SavedPlots = (props) => {
                 props.history.push("/")
             }}>Start a new Garden</button></div>
 
-
+        </div>
         </>
     )
 

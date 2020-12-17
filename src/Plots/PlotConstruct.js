@@ -1,6 +1,7 @@
 import React, { useContext, useRef } from "react"
 import {  PlotContext } from "./PlotProvider"
 import {SavedPlots} from "./SavedPlots"
+import "./PlotConstruct.css"
 
 // This module is for naming a new garden. 
 
@@ -13,9 +14,10 @@ export const NewPlot = (props) => {
 
     return (
         <>
+            <img className= "digIt" src = "/digit.png" alt = "logo"  />
             <h1>Welcome To Dig It</h1>
             <h2>Name your garden to get started</h2>
-            <input type = "text" ref = {name} placeholder= "Name your garden.."></input>
+            <div><input type = "text" ref = {name} placeholder= "Name your garden.."></input></div>
             {/* When a user clickss on save garden it will use addPlots. This will take the current value of what is typed in and POST it to my Plots database, The userId is getting the localStorage of currently logged in user */}
             <button onClick = {() => {
                 addPlots({
