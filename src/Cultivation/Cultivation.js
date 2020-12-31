@@ -5,12 +5,12 @@ import { PlantContext } from "../Plants/PlantProvider"
 export const Cultivation = ({cult}) => {
     const {setClickPlant} = useContext(PlantContext)
   if(cult) { return <>
-        <div>
+        <div className = "cultInfo">
             <h2>{cult.name}</h2>
             <ul>
-                <li >Sowing: {cult.sowing}</li>
-                <li >Watering: {cult.watering}</li>
-                <li >Harvest: {cult.harvest}</li>
+                <li ><strong>Sowing:</strong> {cult.sowing}</li>
+                <li ><strong>Watering:</strong> {cult.watering}</li>
+                <li ><strong>Harvest:</strong> {cult.harvest}</li>
             </ul>
             {/* This sets my click plant back to zero when i click close so my state goes back to normal and it will set a state based on the next plant i click */}
             <button onClick = {() => {

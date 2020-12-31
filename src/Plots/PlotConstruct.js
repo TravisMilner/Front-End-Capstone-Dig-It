@@ -33,7 +33,7 @@ export const NewPlot = (props) => {
             {/* This is where the current user can get to their saved gardens */}
             <button onClick = {() => {
                 props.history.push("/savedgardens")
-            }}>Go to saved gardens</button>
+            }}>Go to Saved Gardens</button>
 
             
         </>

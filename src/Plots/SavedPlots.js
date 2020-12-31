@@ -71,9 +71,10 @@ export const SavedPlots = (props) => {
                 
             </div>
             {/* My close button sets my plot picked back to zero so it wont show my plants anymore and also so it knows that the next garden i click on has an id  */}
-            <div><button onClick = {() => {
+            <div> { plotPicked ? <button onClick = {() => {
                 setPlotPicked(0)
-            }}>Close</button></div>
+            }}>Close</button> : `` }
+            </div>
 
             {/* This button simply takes you back to start a new garden by naming it. */}
             <div><button onClick = {() => {
