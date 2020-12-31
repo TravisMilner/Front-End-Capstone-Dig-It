@@ -16,7 +16,7 @@ export const PlantGrid = (props) => {
     }, [])
     console.log(plantPlots, "heeeeeeee")
     return (
-        
+        <>
         <div className ="plants__righter">
         
                 {
@@ -36,11 +36,11 @@ export const PlantGrid = (props) => {
                 
             }
             {/* This button just takes you to saved gardens so you can see what your saved gardens are */}
-            <button onClick = {() => {
-              props.history.push("/savedgardens")
-            }}>Save These Plants</button>
-            
             </div>
+            <div><button onClick = {() => {
+              props.history.push("/savedgardens")
+            }}>Save These Plants</button></div>
+           </> 
         
     )
 }

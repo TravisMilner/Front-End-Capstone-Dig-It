@@ -52,10 +52,10 @@ export const SavedPlots = (props) => {
                     })
                 }
                     {/* Here i am mapping through my gardenPlots. I have a helper function that simply gets the plant by Id and takes a parameter which is essentially an object. I access the name value of that object and that gets displayed to show the plants in that particular plot. */}
-                <div>{gardenPlots.map(gp => {
+                <div className= "saveList">{gardenPlots.map(gp => {
                 return (
                     <>
-                    <p>
+                    <p className= "savePlant">
                     {getPlantById(gp.plantId).name}
                     
                     </p>
@@ -63,7 +63,7 @@ export const SavedPlots = (props) => {
                 )})}
                 
                 {/* This is a conditional if you will that checks to see if plotPicked has a value, my deletePlot is my delete fetch that takes in the value of plot picked so it knows which plot id to delete */}
-                { plotPicked ? <button onClick = {() => {
+                { plotPicked ? <button className = "deleteGarden" onClick = {() => {
                     deletePlot(plotPicked)
                     .then(setPlotPicked(0))
                 }}>Delete Garden</button> : ``}

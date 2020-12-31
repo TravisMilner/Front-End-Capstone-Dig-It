@@ -37,6 +37,7 @@ h1, h2{
     box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.4);
     border-radius: 15px;
     max-width: 35%;
+    max-height: 500px;
 }
 
 .plants__left {
@@ -60,9 +61,10 @@ h1, h2{
     height: 50px;
     width: 200px;
     border-radius: 15px;
-    background: slategray;
-    color: white;
+    /* background: slategray;
+    color: white; */
     font-size: 20px;
+    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.4);
 }
 
 .cultInfo {
@@ -73,4 +75,37 @@ h1, h2{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.cultList {
+    line-height: 20px;
+    text-align: left;
+    font-size: larger;
+}
+
+.plants__righter {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 30px 100px
+}
+
+.grid {
+    border: 2px solid black;
+    flex-basis: 25%;
+}
+
+.saveList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 30px 100px
+}
+
+.savePlant {
+    border: 2px solid black;
+    flex-basis: 25%;
+    margin: 0;
+}
+
+.deleteGarden {
+    margin-left: 60px;
 }

@@ -7,15 +7,20 @@ export const Cultivation = ({cult}) => {
   if(cult) { return <>
         <div className = "cultInfo">
             <h2>{cult.name}</h2>
-            <ul>
+            <ul className = "cultList">
                 <li ><strong>Sowing:</strong> {cult.sowing}</li>
+                <br></br>
                 <li ><strong>Watering:</strong> {cult.watering}</li>
+                <br></br>
                 <li ><strong>Harvest:</strong> {cult.harvest}</li>
             </ul>
             {/* This sets my click plant back to zero when i click close so my state goes back to normal and it will set a state based on the next plant i click */}
             <button onClick = {() => {
                 setClickPlant(0)
             }}>Close</button>
+        </div>
+        <div className = "cultInfo__overlay">
+            
         </div>
     </>
   }else {
