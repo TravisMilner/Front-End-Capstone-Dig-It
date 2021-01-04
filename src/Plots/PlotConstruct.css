@@ -75,6 +75,7 @@ h1, h2{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 .cultList {
@@ -108,4 +109,13 @@ h1, h2{
 
 .deleteGarden {
     margin-left: 60px;
+}
+
+.cultInfo__overlay {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
 }

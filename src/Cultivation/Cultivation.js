@@ -5,6 +5,7 @@ import { PlantContext } from "../Plants/PlantProvider"
 export const Cultivation = ({cult}) => {
     const {setClickPlant} = useContext(PlantContext)
   if(cult) { return <>
+     <div className = "cultInfo__overlay">
         <div className = "cultInfo">
             <h2>{cult.name}</h2>
             <ul className = "cultList">
@@ -19,7 +20,6 @@ export const Cultivation = ({cult}) => {
                 setClickPlant(0)
             }}>Close</button>
         </div>
-        <div className = "cultInfo__overlay">
             
         </div>
     </>
