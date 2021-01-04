@@ -112,10 +112,12 @@ h1, h2{
 }
 
 .cultInfo__overlay {
-    height: 100vh;
-    width: 100vw;
+   
+    height: 1200px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 0;
     left: 0;
+    
 }
