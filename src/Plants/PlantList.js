@@ -16,8 +16,9 @@ export const PlantList = (props) => {
     }, [])
     console.log(plantPlots, "heeeeeeee")
     return (
-        
-            <div className ="plants__left">
+            <>
+            
+            <div className ="plants__lefter">
                 <h1>Cultivation Information</h1>
                 {
                     // This is where i map over my plantPlots and make my button id the id of the plant so it knows which button i'm clicking on
@@ -45,6 +46,6 @@ export const PlantList = (props) => {
             {/* This is my function from cultivation that lists the cultivation methods. i equated my paramater to my getplantbyid helper function and passed in the state of click plant based on the last that i clicked since thats my last state */}
             <Cultivation cult = {getPlantById(clickPlant)} />
             </div>
-        
+        </>
     )
 }

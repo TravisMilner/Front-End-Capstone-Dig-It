@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+.digIt {
+    width: 500px;
+    height: 500px;
+}
+
+input {
+    border-radius: 10px;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.4);
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Special Elite', cursive;
+    height: 50px;
+    width: 500px;
+    font-size: 30px;
+}
+
+button {
+    background: white;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.4);
+    font-family: 'Special Elite', cursive;
+    height: 50px;
+    width: 200px;
+    font-size: 15px;
+}
+
+h1, h2{
+    font-family: 'Special Elite', cursive;
+
+}
+
+.plants__right {
+    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.4);
+    border-radius: 15px;
+    max-width: 35%;
+    max-height: 500px;
+}
+
+.plants__left {
+    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.4);
+    border-radius: 15px;
+}
+
+.savedGardens {
+    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.4);
+    max-width: 500px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.savedImg {
+    width: 500px;
+    height: 500px;
+}
+
+.plantDrop {
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    /* background: slategray;
+    color: white; */
+    font-size: 20px;
+    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.4);
+}
+
+.cultInfo {
+    position: fixed;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.4);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.cultList {
+    line-height: 20px;
+    text-align: left;
+    font-size: larger;
+}
+
+.plants__righter {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 30px 100px
+}
+
+.grid {
+    border: 2px solid black;
+    flex-basis: 25%;
+}
+
+.saveList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 30px 100px
+}
+
+.savePlant {
+    border: 2px solid black;
+    flex-basis: 25%;
+    margin: 0;
+}
+
+.deleteGarden {
+    margin-left: 60px;
+}
+
+.cultInfo__overlay {
+   
+    height: 1200px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}

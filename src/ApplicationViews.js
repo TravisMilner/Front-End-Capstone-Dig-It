@@ -25,6 +25,7 @@ export const ApplicationViews = (props) => {
                 <Route exact path = "/plantselection/:plotId(\d+)" render = {
                     props => 
                     <>
+                    <img className = "digIt" src = "/digit.png" />
                     <div className = "plantParent">
                     <div className = "plants__right">
                     <PlantSelect {...props} />

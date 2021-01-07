@@ -1,0 +1,154 @@
+{
+  "plants": [
+    {
+      "id": 1,
+      "name": "Corn",
+      "sowing": "Planting depth is 1-2 inches in soil with a PH level of 6 to 6.5. Plant in full sun for best result. Plant Spacing is 4 inches, while row spacing is 30 inches.",
+      "watering": "Requires 1 to 1-1/2 inches of water weekly",
+      "harvest": "Harvest time is typically 80 days from planting. Firmly pull the ear downwards while twisting."
+    },
+    {
+      "id": 2,
+      "name": "Yellow Squash",
+      "sowing": "Planting depth is 1-2 seeds in 1 inch of soil. Plant in full sun for best result. Plant spacing is 36 inches. Thin to one plant when seedlings have two sets of leaves.",
+      "watering": "Requires 1 to 2 inches of water weekly",
+      "harvest": "Harvest time is typically 53 days from planting. Pick all fruit at same time. If fruit is allowed to mature, it will stop producing. Gently twist until fruit snaps off."
+    },
+    {
+      "id": 3,
+      "name": "Zucchini",
+      "sowing": "Planting depth is 1-2 seeds in 1 inch of soil. Plant in full sun for best results. Plant spacing is 36 inches apart. Thin to one plant when seedlings have two sets of leaves.",
+      "watering": "Requires 1 to 2 inches of water weekly",
+      "harvest": "Harvest time is typically 57 days from planting. Pick all fruit at same time. If fruit is allowed to mature, it will stop producing. Gently twist until fruit snaps off."
+    },
+    {
+      "id": 4,
+      "name": "Tomato",
+      "sowing": "Planting depth for plantlings is about 8 inches of soil. Plant in full sun for best result. Plant spacing is 30-48 inches and row spacing is 3-4 feet apart. Fill in soil to first set of leaves. Place tomato cage at this stage.",
+      "watering": "Requires 2 inches of water weekly. Up to 3 inches during dry spells",
+      "harvest": "Harvest time is typically 80 days from planting. Pick when fully colored and firm to touch. Gently tug and twist to pick fruit."
+    },
+    {
+      "id": 5,
+      "name": "Jalepeno",
+      "sowing": "Planting depth is 1/4 inch deep. Plant in full sun for best results. Plant spacing is 18 inches apart, while row spacing is 2-3 feet apart.",
+      "watering": "Requires 1-2 inches of water per week. Less water results in hotter peppers",
+      "harvest": "Harvest time can be at any stage. Maturity is typically 75 days. Cut from plant with a sharp knife, leaving the stem."
+    },
+    {
+      "id": 6,
+      "name": "Bell Pepper",
+      "sowing": "Planting depth is 1/4 inch deep. Plant in full sun for best results. Plant spacing is 18 inches apart, while row spacing is 2-3 feet apart.",
+      "watering": "Requires 1-2 inches of water weekly",
+      "harvest": "Harvest time is typically 60-80 days. Peppers may be harvested at any stage. Cut from plant with sharp knife, leaving stem attached."
+    },
+    {
+      "id": 7,
+      "name": "Broccoli",
+      "sowing": "Planting depth is 1/4 inch deep. Plant in midsummer for fall crop. Plant spacing is 20 inches. Row spacing is 2 feet apart.",
+      "watering": "Requires 1-2 inches of water weekly",
+      "harvest": "Harvest time is typically 70-75 days from planting. Pick when heads have tight, firm buds. Cut off central head along with 6 inches of stem so plant will produce smaller heads."
+    },
+    {
+      "id": 8,
+      "name": "Peas",
+      "sowing": "Planting depth is 1 inch deep. Recommended to grow in cooler weather. Plant spacing is 2 inches apart, while row spacing is 6 inches apart.",
+      "watering": "Requires about 1 inch of water weekly. Does not thrive in overly wet conditions.",
+      "harvest": "Harvest time is typically 61 days from planting. If pea pod is round and has nice sheen while bright green, it is ready. Gently tug and snap peas off plant"
+    },
+    {
+      "id": 9,
+      "name": "Green Beans",
+      "sowing": "Planting depth is 1 inch deep. Plant in full sun for best results. Plant spacing is 3 inches apart, while row spacing is 24 inches apart. Thin gradually to stand 6 inches apart when seedlings are 2 inches high.",
+      "watering": "Requires 1-2 inches of water weekly",
+      "harvest": "Harvest time is typically 50 days from planting. Pick pods as soon as well-filled out with beans. Gently tug and twist to pick fruit."
+    },
+    {
+      "id": 10,
+      "name": "Carrots",
+      "sowing": "Planting depth ranges depending on variety. Typical is 1/4 to 1/2 inches deep. Plant in full sun for best results. Plant spacing is 12 inches, while row spacing is 6-8 inches. *note* Carrots can be difficult to grow. More research is needed",
+      "watering": "Requires 1-2 inches of water weekly when sprouted. More may be needed during germination.",
+      "harvest": "Harvest time is typically 65-70 days from planting. Soak carrot bed with water before pulling. Twist the tops off while pulling the roots up."
+    },
+    {
+      "id": 11,
+      "name": "Cucumbers",
+      "sowing": "Planting depth is 1/2 inch deep. Plant in full sun for best results. Plant spacing is 3 inches apart, while row spacing is 19-26 inches apart. Thin to one plant per plot.",
+      "watering": "Requires 1-2 inches of water weekly.",
+      "harvest": "Harvest time is typically 58 days from planting. Ready when fruit is 6-8 inches long. Cut the fruit from vine, do not pull."
+    },
+    {
+      "id": 12,
+      "name": "Lettuce",
+      "sowing": "Planting depth is 1/4 to 1/2 inch deep. Plant in full sun for best results. In late summer sow in area that stays below 75 degrees. Plant spacing is 8 inches apart, while row spacing is 12 inches apart.",
+      "watering": "Requires heavy watering. *note* Watering lettuce is difficult. More research is needed before planting",
+      "harvest": "Harvest time is typically 85 days from planting. Try to harvest in the morning. Leafy lettuce can be picked by leaves. Iceburg needs to be cut just below the crown."
+    },
+    {
+      "id": 13,
+      "name": "Blueberries",
+      "sowing": "Plant as plantling. Dig hole twice the size of the root mass. Ph of soil is very important, needs a pH fo 4.2-5.2 to thrive",
+      "watering": "Requires 1-2 inches of water weekly",
+      "harvest": "Cover with bird netting as fruit ripens. Bird netting should not touch fruit. Will turn blue before fully ripe. When underside of the berry turns from pink to full blue, the fruit is ripe. Pick when weather is dry and avoid over-handling"
+    },
+    {
+      "id": 14,
+      "name": "Strawberries",
+      "sowing": "Plant as plantling. Soack roots in lukewarm water two hours before planting. Trim roots to 3 inches long. Dig hole long enough to spread roots out.",
+      "watering": "Requires 1-2 inches of water weekly. Water frequently until plants are growing vigorously.",
+      "harvest": "Pick fruit as ripens. The deeper of color red the sweeter the fruit. Regular picking will produce more fruit."
+    },
+    {
+      "id": 15,
+      "name": "Watermelon",
+      "sowing": "Planting depth is 1 inch deep. Plant in full sun for best results. Row spacing is 6-8 feet",
+      "watering": "Requires 1-2 inches of water weekly",
+      "harvest": "Harvest time is typically 75 days from planting. Each watermelon will have a runner near its base, when the runner turns brown the fruit is ready to be picked. You can also knock on fruit, if hollow then it is ready to be picked."
+    },
+    {
+      "id": 16,
+      "name": "Onions",
+      "sowing": "Planting depth is 1/4 to 1/2 inch deep. Plant in full sun for best results. Plant spacing is 3 inches apart, while row spacing is 1-2 feet apart.",
+      "watering": "Requires 1 to 2 inches of water weekly",
+      "harvest": "Harvest time is typically 85-100 days from planting. *note* Harvesting onions is tricky, more research is needed before harvest. When tops have fallen over and turned yellow pull bulbs and cover with foilage. Allow onions to dry for up to a week. Bring indoors with good air ciculation for 2-3 weeks"
+    },
+    {
+      "id": 17,
+      "name": "Radish",
+      "sowing": "Planting depth is 1/2 inch deep. Plant in full sun for best results. Space rows 6 inches apart",
+      "watering": "Requires 1 inch of water weekly",
+      "harvest": "Harvest time is typically 25 days after planting. Push back soil to see if bulbs have formed. Finish harvest before warm weather is consistent"
+    },
+    {
+      "id": 18,
+      "name": "Beets",
+      "sowing": "Planting depth is 1/2 inch deep. Plant after any danger of frost. Ph must be between 6.0-7.0. Space rows 12 inches apart",
+      "watering": "Requires 1 inch of water weekly",
+      "harvest": "Harvest time is typically 55-60 days after planting. Pick the greens when they are 4-6 inches long. Harvest roots at 1 inch for baby beets or 3 inches for mature beets."
+    },
+    {
+      "id": 19,
+      "name": "Garlic",
+      "sowing": "Planting depth is 3-4 inches deep. Plant in full sun for best results. Plant spacing is 4 inches apart, while row spacing is 1-2 feet apart. Plant cloves pointed side up.",
+      "watering": "Requires 1 inch of water weekly",
+      "harvest": "Harvest time is typically 90-240 days after planting. Harvest when the foliage begins to turn yellow. Pull up plants and allow them to dry in sun for a few hours. Keep in well ventilated area until thoroughly dry in about 3-4 weeks. *note* Garlic can be difficult to grow. More research is needed before planting"
+    },
+    {
+      "id": 20,
+      "name": "Potatoes",
+      "sowing": "Planting depth is 4-5 inches deep. Potatoes ready to plant are called mini-tubers. Do not cut mini-tuber. Plant directly after last expected frost. Plant in full sun for best results. *note* Potatoes can be difficult to keep up with. More research is needed before planting.",
+      "watering": "Requires 1-2 inches of water weekly. More is needed during hot spells",
+      "harvest": "Harvest time is typically 80 days. Mature potatoes are ready 2-3 weeks after plants yellow and die back. Leave out to dry for an hour. *note* Leaves of potato plants are poisonous to humamns and animals."
+    }
+  ],
+  "users": [
+    {
+      "email": "travis@travis.com",
+      "password": "travis",
+      "name": "Travis Milner",
+      "id": 1
+    }
+  ],
+  "plots": [],
+  "plantPlots": []
+}
