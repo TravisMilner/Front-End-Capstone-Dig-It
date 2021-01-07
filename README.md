@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Dig It
+----------
+Dig it is a simple web application created for beginner backyard gardeners to plan and organize their first few backyard gardens. 
+This app was designed to be simple, minimilistic, and easy to use to take away the stress and intimidation that comes with actually creating your first garden.
+Users can also learn simple cultivation tips with each plant that they choose to help them get started.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How to use this app on your local machine
+---------------------------------------------
 
-## Available Scripts
+### Prerequisites 
 
-In the project directory, you can run:
+To start you'll need to download NPM. [You can get it here](https://www.npmjs.com/get-npm)
 
-### `npm start`
+### Installing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open your command line and type
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+`git clone git@github.com:TravisMilner/Front-End-Capstone-Dig-It.git`
 
-### `npm test`
+Second step for installing..
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm install`
 
-### `npm run build`
+Navigate to the server..
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`cd dig-it-database`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To start the server type..
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`json-server -p 8088 -w database.json`
 
-### `npm run eject`
+Open a second command line tab and navigate to the dig-it directory and type..
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`npm start`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Using the app
+-----------------
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+If you'd like to use an existing user try using the email of "travis@travis.com" and password "travis"
+- Please note that this version of Dig it does not offer secure storage. Do not save anything sensitive to this database!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Built with
+--------------
 
-## Learn More
+- React
+- Javascript
+- Pure CSS for styling
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
